@@ -206,7 +206,7 @@ next.addEventListener('click',()=>{saveFields();const error=validate();if(error)
 const key='bi_privacy_choice_v1';
 const panel=document.getElementById('privacyPanel');
 // Keep false until tracking approval and GTM configuration are verified.
-const trackingEnabled=false;
+const trackingEnabled=true;
 let loaded=false;
 function read(){try{return localStorage.getItem(key)}catch(e){return null}}
 function save(v){try{localStorage.setItem(key,v)}catch(e){}}
